@@ -1,11 +1,11 @@
-# KITchen benchmark
+# The KITchen Benchmark
 
 [**Paper**](https://doi.org/10.1109/Humanoids58906.2024.10769947) (Humanoids 2024) ·
 [**Website**](https://kitchen-dataset.github.io/KITchen/)
 
 ![KITchen frames with their 2D boxes, instance masks and 6D poses](docs/teaser.jpg)
 
-Frozen splits, ground truth and one evaluation command for the KITchen RGB-D
+Frozen splits, ground truth, and one evaluation command for the KITchen RGB-D
 dataset. Three tasks, all scored with the community's standard protocols so
 existing methods and tools plug in unchanged:
 
@@ -15,7 +15,7 @@ existing methods and tools plug in unchanged:
 | `segm` instance segmentation | RLE masks + class + score | **AP**, AP50, AP75, APs/m/l, AR300 | COCO |
 | `pose` 6D object pose | R, t (mm) + object id + score | **AP_6D** = mean(AP_MSSD, AP_MSPD); AR_6D | BOP 2024 / BOP 2019 |
 
-The design, the reasons behind it and the rules are in [BENCHMARK.md](BENCHMARK.md).
+The design, the reasons behind it, and the rules are in [BENCHMARK.md](BENCHMARK.md).
 
 ## Quick start
 
@@ -59,7 +59,7 @@ kitchenbench eval     kitchen_bench_v1.0 pose my_poses.csv --method method.json
 `eval` prints the scores and writes a **result card** (`results/<name>_pose_test.json`
 plus `.md` and `.tex` rows ready for a paper). The card records the benchmark
 version, the checksum of the ground truth, the checksum of your prediction
-file and the evaluator version, so anyone can reproduce the number.
+file, and the evaluator version, so anyone can reproduce the number.
 
 ## Reporting
 
