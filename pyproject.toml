@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kitchenbench"
+dynamic = ["version"]
+description = "Frozen splits, ground truth and evaluation for the KITchen RGB-D dataset (2D detection, instance segmentation, 6D pose)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = ["numpy>=1.21", "pycocotools>=2.0.6"]
+
+[project.optional-dependencies]
+build = ["pillow>=9", "trimesh>=3.20"]
+test = ["pytest>=7"]
+
+[project.scripts]
+kitchenbench = "kitchenbench.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "kitchenbench.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["kitchenbench*"]

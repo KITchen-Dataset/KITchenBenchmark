@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use the KITchen benchmark, please cite the KITchen paper and state the benchmark version."
+title: "KITchen benchmark"
+version: "1.0"
+license: MIT
+authors:
+  - family-names: Younes
+    given-names: Abdelrahman
+  - family-names: Asfour
+    given-names: Tamim
+preferred-citation:
+  type: conference-paper
+  title: "KITchen: A Real-World Benchmark and Dataset for 6D Object Pose Estimation in Kitchen Environments"
+  authors:
+    - family-names: Younes
+      given-names: Abdelrahman
+    - family-names: Asfour
+      given-names: Tamim
+  collection-title: "2024 IEEE-RAS 23rd International Conference on Humanoid Robots (Humanoids)"
+  start: 803
+  end: 810
+  year: 2024
+  publisher:
+    name: IEEE
+  doi: "10.1109/Humanoids58906.2024.10769947"

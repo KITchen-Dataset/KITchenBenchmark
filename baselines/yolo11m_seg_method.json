@@ -1,0 +1,11 @@
+{
+  "name": "YOLO11m-seg baseline",
+  "authors": "KITchen team",
+  "paper": "unpublished",
+  "code": "baselines/ in the KITchen benchmark repository",
+  "input": "rgb",
+  "training_data": "kitchen-train",
+  "extra_data": "COCO-pretrained Ultralytics weights; every 3rd train frame",
+  "single_model": "yes",
+  "hardware": "NVIDIA RTX A6000"
+}
